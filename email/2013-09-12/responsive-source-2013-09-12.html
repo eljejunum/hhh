@@ -17,16 +17,18 @@
 					body[yahoo] .deviceWidth {width:440px!important;}	
 					body[yahoo] .center {text-align: center!important; margin: auto!important; padding-left:auto!important; padding-right:auto!important; float: none;}
 					body[yahoo] .social {padding-top:10px!important;}
-					body[yahoo] .grid-left {width: 323px!important; height: 246px!important; padding: 20px 0 10px 0!important;}
-					body[yahoo] .grid-right {padding: 10px 0!important;}	
+					body[yahoo] .grid-left {width: 323px!important; height: 246px!important; padding: 20px 0 0 0!important;}
+					body[yahoo] .grid-right {width: 323px!important; height: 203px!important; padding: 10px 0!important;}
+					body[yahoo] .desktopOnly {height: 0px!important; display: none!important; mso-hide: all!important;}	
 			}
 			
 	@media only screen and (max-width: 479px) {
 					body[yahoo] .deviceWidth {width:280px!important;}	
 					body[yahoo] .center {text-align: center!important; margin: auto!important; padding-left:auto!important; padding-right:auto!important; float: none;}
 					body[yahoo] .social {padding-top:10px!important;}
-					body[yahoo] .grid-left {width:280px!important; height: 214px!important; padding: 20px 0 10px 0!important;}
+					body[yahoo] .grid-left {width:280px!important; height: 214px!important; padding: 20px 0 0 0!important;}
 					body[yahoo] .grid-right {width:280px!important; height: 176px!important; padding: 10px 0!important;}
+					body[yahoo] .desktopOnly {height: 0px!important; display: none!important; mso-hide: all!important;}
 			}
 			
 	/* Portrait High Density Phone */
@@ -42,6 +44,8 @@
 					body[yahoo] .retinaCTA {width: 353px!important; height: 99px!important;}
 					body[yahoo] .grid-left {width:420px!important; height: 321px!important; padding: 30px 0 15px 0!important;}
 					body[yahoo] .grid-right {width:420px!important; height: 264px!important; padding: 15px 0!important;}
+					body[yahoo] .desktopOnly {height: 0px!important; display: none!important; mso-hide: all!important;}
+					body[yahoo] .retinaText {font-size: 32px!important; line-height: 34px!important;}
 			}
 	
 	/* Landscape High Density Phone */		
@@ -56,6 +60,8 @@
 					body[yahoo] .retinaCTA {width: 353px!important; height: 99px!important;}
 					body[yahoo] .grid-left {width:420px!important; height: 321px!important; padding: 30px 0 15px 0!important;}
 					body[yahoo] .grid-right {width:420px!important; height: 264px!important; padding: 15px 0!important;}
+					body[yahoo] .desktopOnly {height: 0px!important; display: none!important; mso-hide: all!important;}
+					body[yahoo] .retinaText {font-size: 32px!important; line-height: 34px!important;}
 			}
 
 </style>
@@ -154,8 +160,8 @@
 			<table width="590"  class="deviceWidth desktopOnly" border="0" cellpadding="0" cellspacing="0" align="center">
 				<tr>
 					<!-- Grid -->
-					<td class="deviceWidth center" valign="top" style="padding:0" bgcolor="#ffffff" align="center">
-						<img class="deviceWidth center" src="http://www.hhhealth.com/epromo/20130912/grid.jpg" alt="Win a Health Spa Weekend Retreat!" border="0" align="center"
+					<td class="deviceWidth center desktopOnly" valign="top" style="padding:0" bgcolor="#ffffff" align="center">
+						<img class="deviceWidth center desktopOnly" src="http://www.hhhealth.com/epromo/20130912/grid.jpg" alt="Win a Health Spa Weekend Retreat!" border="0" align="center"
 							style="
 								display: block; 
 								text-align: center;
@@ -166,44 +172,36 @@
 				</tr>
 			</table> <!-- END GRID, END DESKTOP -->
 							
-			<!-- START SPLIT Column -->
-			<table width="590" class="deviceWidth mobileOnly" cellpadding="0" cellspacing="0" align="center" style="height:0px;" bgcolor="#ffffff">	
-
+			<!-- MOBILE Content -->
+			<table cellpadding="0" cellspacing="0" border="0" class="center deviceWidth mobileOnly">
 				<tr>
-					<td valign="top">
-						
-						<!-- COL ONE -->
-						<table width="45%" align="left" cellpadding="0" cellspacing="0" class="deviceWidth">
-							<tr>
-								<td valign="top" align="right" style="padding:0" class="deviceWidth center">
-									<p style="line-height:0px; padding:0; margin:0;"><img width="264" height="203" src="http://www.hhhealth.com/epromo/20130912/grid-left.jpg" alt="One Grand Prize - 3 Days at Hilton Head Health" border="0" style="width: 264px; height: 203px;" class="center grid-left" /></p>
-								</td>
-							</tr>                            
-						</table><!-- END COL ONE -->
-
-                        <!-- COL TWO -->            
-						<table width="55%" align="right" cellpadding="0" cellspacing="0" class="deviceWidth">
-							<tr>
-								<td valign="top" align="left" style="padding:0; line-height: 0px;" class="deviceWidth center">
-									<p style="line-height:0px; padding:0; margin:0;"><img width="320" height="203" src="http://www.hhhealth.com/epromo/20130912/grid-right.jpg" alt="Performance Apparel for Five Runners Up and 25% off for everyone that enters" border="0" style="width: 320px; height: 203px;" class="center grid-right" /></p>
-								</td>
-						</table><!-- END COL TWO -->
+					<td valign="top" align="center" style="padding:0; line-height:0px; mso-hide: all;" class="deviceWidth center">
+						<img height="0" src="http://www.hhhealth.com/epromo/20130912/grid-left.jpg" alt="One Grand Prize - 3 Days at Hilton Head Health" border="0" style="height:0px; padding:0; mso-hide: all;" class="center grid-left" /></p>
+					</td>
+				</tr>                            
+			</table>
+        
+			<table align="center" cellpadding="0" cellspacing="0" border="0" class="center deviceWidth mobileOnly">
+				<tr>
+					<td valign="top" align="left" style="padding:0; line-height: 0px; mso-hide: all;" class="deviceWidth center">
+						<img height="0" src="http://www.hhhealth.com/epromo/20130912/grid-right.jpg" alt="Performance Apparel for Five Runners Up and 25% off for everyone that enters" border="0" style="height:0; mso-hide: all;" class="center grid-right" /></p>
 					</td>
 				</tr>
-			</table><!-- END TWO-COL -->
+			</table>
+			<!-- END MOBILE -->
 			
 			<!-- One Column -->
 			<table width="580"  class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
 				<!-- TEXT -->
 				<tr>
-					<td class="deviceWidth center" valign="top" style="padding:20px 0; color: #58595b; font-family: arial, sans-serif; font-size: 22px; line-height: 27px;" bgcolor="#ffffff" align="center">
-						<p>In less than a minute you could be on your way to an all-inclusive health spa weekend!</p>					
+					<td class="deviceWidth center retinaText" valign="top" style="padding:0 20px; margin:0; color: #58595b; font-family: arial, sans-serif; font-size: 22px; line-height: 27px;" bgcolor="#ffffff" align="center">
+						<p style="margin:0;">In less than a minute you could be on your way to an all-inclusive health spa weekend!</p>					
 					</td>
 				</tr>
 				
 				<!-- CTA -->
 				<tr>
-					<td class="deviceWidth center" valign="top" style="padding:0 0 20px 0" bgcolor="#ffffff" align="center">
+					<td class="deviceWidth center" valign="top" style="padding:20px 0" bgcolor="#ffffff" align="center">
 						<a href="https://www.facebook.com/hiltonheadhealth/app_403359706360567" target="_blank"><img width="235" src="http://www.hhhealth.com/epromo/20130912/cta.jpg" alt="Enter Now" border="0" class="center retinaCTA"/></a>		
 					</td>
 				</tr>
@@ -216,7 +214,7 @@
 				line-height: 2px;
 			">&nbsp;</div>
 			
-			<!-- One Column -->
+			<!-- START FOOTER -->
 			<table width="580" class="deviceWidth" border="0" cellpadding="0" cellspacing="0" align="center">
 				<!-- Logo -->
 				<tr>
@@ -250,7 +248,7 @@
 					14 VALENCIA RD., HILTON HEAD ISLAND, SC 29928<br/>
 					&copy;COPYRIGHT 2013 HILTON HEAD HEALTH.  ALL RIGHTS RESERVED.
 				</td></tr>
-			</table>
+			</table> <!-- END FOOTER -->
 						
 		</td>
 	</tr>
